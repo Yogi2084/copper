@@ -1,9 +1,18 @@
-import React from 'react'
+import FooterBar from "@/components/footer-bar/footerBar";
+import NavigationBar from "@/components/navigation-bar/navigationBar";
+import React from "react";
 
-export const Rootpage = () => {
+const RootPage = () => {
   return (
-    <div>Rootpage</div>
-  )
-}
+    <div className="flex flex-col items-stretch">
+      <NavigationBar />
+      <div className="h-48 bg-orange-500" />
+      <div className="h-48 bg-purple-500" />
+      <div className="h-28 bg-green-500" />
+      <FooterBar />
 
-export default Rootpage
+    </div>
+  );
+};
+
+export default RootPage;
